@@ -14,7 +14,7 @@ O SIGO é um sistema voltado para a gestão de clínicas odontológicas. Ele foi
 - Documento de visão 
 - Diagrama de casos de uso   
 - Documentos de casos de uso
-- protótipo
+- Protótipo
 - Lista de requisitos funcionais 
 - Lista de requisitos não funcionais
 - Diagrama de atividades
