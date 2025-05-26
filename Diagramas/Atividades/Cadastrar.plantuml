@@ -1,0 +1,46 @@
+@startuml
+start
+
+:Acessar SIGO;
+:Selecionar opção "Cadastrar";
+
+:Escolher tipo de cadastro;
+note right
+Paciente ou Administrador
+end note
+
+if (Tipo é Paciente?) then (Sim)
+    :Preencher dados do paciente;
+    :Validar informações;
+    
+    if (Dados válidos?) then (Sim)
+        :Salvar cadastro do paciente;
+        :Exibir mensagem de sucesso;
+    else (Não)
+        :Exibir erros de validação;
+        :Solicitar correção;
+        -> Preencher dados do paciente;
+    endif
+
+else (Tipo é Administrador)
+    :Verificar permissões do usuário atual;
+    if (Usuário tem permissão?) then (Sim)
+        :Preencher dados do administrador;
+        :Validar informações;
+        
+        if (Dados válidos?) then (Sim)
+            :Salvar cadastro do administrador;
+            :Exibir mensagem de sucesso;
+        else (Não)
+            :Exibir erros de validação;
+            :Solicitar correção;
+            -> Preencher dados do administrador;
+        endif
+
+    else (Não)
+        :Exibir mensagem "Permissão negada";
+    endif
+endif
+
+stop
+@enduml
