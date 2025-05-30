@@ -11,14 +11,15 @@ O SIGO é um sistema voltado para a gestão de clínicas odontológicas. Ele foi
 
 ###  Documentos Incluídos
 - Apresentação do sistema
-- Documento de visão 
-- Diagrama de casos de uso   
-- Documentos de casos de uso
-- Protótipo
-- Lista de requisitos funcionais 
-- Lista de requisitos não funcionais
 - Diagrama de atividades
 - Diagrama de classes
+- Diagrama de casos de uso   
+- Documentos de casos de uso
+- Documento de visão 
+- Lista de requisitos funcionais 
+- Lista de requisitos não funcionais
+- Protótipo
+
 
 ## Link do Figma
 <a href = "https://www.figma.com/design/WJ4rzBBXTAVyWOCxsCmoqs/Logo-Plasma?node-id=0-1&p=f&t=gDNclNnN6PoF70Z0-0" target="_black">Protótipo</a>
