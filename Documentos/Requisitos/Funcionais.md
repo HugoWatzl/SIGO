@@ -1,7 +1,7 @@
 # Requisitos Funcionais (RF) do SIGO
 
 **RF001 – Autenticação e Controle de Acesso**  
-O sistema deve permitir que pacientes, dentistas, recepcionistas e administradores se autentiquem utilizando login e senha, garantindo acesso somente às funcionalidades permitidas para seu perfil.
+O sistema deve permitir que pacientes, dentistas e recepcionistas se autentiquem utilizando login e senha, garantindo acesso somente às funcionalidades permitidas para seu perfil.
 
 **RF002 – Cadastro de Paciente**  
 O sistema deve permitir que recepcionistas cadastrem novos pacientes, incluindo dados pessoais, contatos, histórico clínico e dados bancários opcionais.
