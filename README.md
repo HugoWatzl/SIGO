@@ -23,3 +23,6 @@ O SIGO é um sistema voltado para a gestão de clínicas odontológicas. Ele foi
 
 ## Link do Figma
  <A href = "https://www.figma.com/proto/WJ4rzBBXTAVyWOCxsCmoqs/Logo-Plasma?node-id=3-3&p=f&t=j2v0Mi7iGo8KUOAa-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A3" target = "_black">Protótipo Funcional </a>
+
+## Link da Apresentação
+<A href = "https://gamma.app/docs/SIGO-Sistema-Integrado-de-Gestao-Odontologica-d9y2j1abqqtr246?mode=doc"> Apresentação
