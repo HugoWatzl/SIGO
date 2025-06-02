@@ -18,9 +18,9 @@
 **Atores:** [Paciente, Recepcionista]  
 **Resumo:** Permite o agendamento de uma consulta para um paciente.  
 **Fluxo Principal:**  
-1. Ator informa dados da consulta (data, horário, dentista).  
+1. Ator informa dados da consulta (data, horário, tipo).  
 2. O sistema verifica disponibilidade.  
-3. O sistema agenda e confirma a consulta.  
+3. O sistema agenda e confirma a consulta por email.  
 **Fluxos Alternativos:**  
 - 2a. Horário indisponível: sistema solicita nova escolha.  
 - 2b. Paciente indisponível nas datas sugeridas: sistema oferece opções alternativas ou contato para reagendamento.  
