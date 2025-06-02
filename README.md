@@ -22,4 +22,4 @@ O SIGO é um sistema voltado para a gestão de clínicas odontológicas. Ele foi
 
 
 ## Link do Figma
-<a href = "https://www.figma.com/design/WJ4rzBBXTAVyWOCxsCmoqs/Logo-Plasma?node-id=0-1&p=f&t=gDNclNnN6PoF70Z0-0" target="_black">Protótipo SIGO</a>
+<a href = "[https://www.figma.com/design/WJ4rzBBXTAVyWOCxsCmoqs/Logo-Plasma?node-id=0-1&p=f&t=gDNclNnN6PoF70Z0-0" target="_black](https://www.figma.com/proto/WJ4rzBBXTAVyWOCxsCmoqs/Logo-Plasma?node-id=3-3&p=f&t=j2v0Mi7iGo8KUOAa-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A3" target = "_black)">Protótipo SIGO</a>
