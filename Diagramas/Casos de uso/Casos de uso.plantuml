@@ -36,7 +36,7 @@ Usuario --> (Autenticar)
 (Recepcionista) --> (Selecionar Forma de Pagamento)
 
 (Registrar Pagamento) .> (Selecionar Forma de Pagamento) : <<include>>
-(Registrar Pagamento) <. (Aplicar Desconto) : <<extend>>
+
 
 ' ==== Casos específicos da Recepcionista ====
 Recepcionista --> (Cadastrar Paciente)
@@ -47,8 +47,7 @@ Recepcionista --> (Emitir Relatórios)
 ' ==== Casos específicos do Dentista ====
 Dentista --> (Registrar Procedimento)
 Dentista --> (Gerenciar Tratamento)
-(Gerenciar Tratamento) .> (Emitir Plano de Tratamento) : <<include>>
-(Gerenciar Tratamento) .> (Recomendar Tratamento) : <<include>>
+(Gerenciar Tratamento) .> (Prescrever Plano de Tratamento) : <<include>>
 
 @enduml
 

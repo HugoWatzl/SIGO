@@ -33,14 +33,8 @@ class Recepcionista {
   + emitirRelatorios()
 }
 
-class Agenda {
-  - consultas: Lista<Consulta>
-  + adicionarConsulta()
-  + cancelarConsulta()
-  + consultarAgenda()
-}
-
 class Consulta {
+  - consultas: Lista<Consulta>
   - id: int
   - data: Date
   - horario: Time
@@ -108,14 +102,8 @@ Paciente --|> Usuario
 Dentista --|> Usuario
 Recepcionista --|> Usuario
 
-PagamentoDinheiro --|> Pagamento
-PagamentoCartao --|> Pagamento
-PagamentoPIX --|> Pagamento
-PagamentoDebitoAutomatico --|> Pagamento
-
 ' Relacionamentos 
-Usuario "1" -- "1" Agenda : possui >
-Agenda "1" -- "0..*" Consulta : gerencia >
+Usuario "1" --  "0..*" Consulta : gerencia >
 Paciente "1" -- "0..*" Consulta : agenda >
 Dentista "1" -- "0..*" Consulta : atende >
 Consulta "1" -- "0..*" Procedimento : inclui >
@@ -126,6 +114,7 @@ Dentista "1" -- "0..1" PlanoTratamento : cria >
 PlanoTratamento "1" *-- "0..*" EtapaTratamento : contém >
 Paciente "1" -- "0..*" PlanoTratamento : possui >
 Recepcionista "1" -- "0..*" Relatorio : gera >
+Consulta "1" -- "1" Pagamento : possui >
 
 @enduml
 
