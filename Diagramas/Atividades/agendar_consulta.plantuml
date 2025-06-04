@@ -3,22 +3,24 @@ start
 
 :usuario loga;
 :Selecionar opção "Agendar Consulta";
-if(é adm?) then (sim)
+
+if (é adm?) then (sim)
     :Escolher dentista;
-else (não)
-endif
-:Escolher data e horário;
-
-if (Data e horário disponíveis?) then (Sim)
-    :Exibir detalhes da consulta;
-    :Confirmar agendamento;
-    :Salvar agendamento no sistema;
-    :Enviar notificação de confirmação;
-    stop
-else (Não)
-    :Exibir mensagem "Horário indisponível";
-    :Oferecer opções alternativas;
-    ->Escolher data e horário;
 endif
 
+repeat
+    :Escolher data e horário;
+    if (Data e horário disponíveis?) then (Sim)
+        :Exibir detalhes da consulta;
+        :Confirmar agendamento;
+        :Salvar agendamento no sistema;
+        :Enviar notificação de confirmação;
+        break
+    else (Não)
+        :Exibir mensagem "Horário indisponível";
+        :Oferecer opções alternativas;
+    endif
+repeat while (Horário não disponível?)
+
+stop
 @enduml

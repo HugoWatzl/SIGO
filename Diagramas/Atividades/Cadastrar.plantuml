@@ -10,32 +10,32 @@ Paciente ou Administrador
 end note
 
 if (Tipo é Paciente?) then (Sim)
-    :Preencher dados do paciente;
-    :Validar informações;
-    
-    if (Dados válidos?) then (Sim)
-        :Salvar cadastro do paciente;
-        :Exibir mensagem de sucesso;
-    else (Não)
-        :Exibir erros de validação;
-        :Solicitar correção;
-        -> Preencher dados do paciente;
-    endif
+        :Preencher dados do paciente;
+    repeat
+        :Validar informações;
+        if (Dados válidos?) then (Sim)
+            :Salvar cadastro do paciente;
+            :Exibir mensagem de sucesso;
+            break
+        else (Não)
+            :Exibir erros de validação;
+        endif
+    repeat while (Solicitar correção)
 
 else (Tipo é Administrador)
     :Verificar permissões do usuário atual;
     if (Usuário tem permissão?) then (Sim)
-        :Preencher dados do administrador;
-        :Validar informações;
-        
-        if (Dados válidos?) then (Sim)
-            :Salvar cadastro do administrador;
-            :Exibir mensagem de sucesso;
-        else (Não)
-            :Exibir erros de validação;
-            :Solicitar correção;
-            -> Preencher dados do administrador;
-        endif
+            :Preencher dados do administrador;
+        repeat
+            :Validar informações;
+            if (Dados válidos?) then (Sim)
+                :Salvar cadastro do administrador;
+                :Exibir mensagem de sucesso;
+                break
+            else (Não)
+                :Exibir erros de validação;
+            endif
+        repeat while (Solicitar correção)
 
     else (Não)
         :Exibir mensagem "Permissão negada";
